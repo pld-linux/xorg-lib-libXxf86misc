@@ -1,14 +1,14 @@
 Summary:	Xxf86misc library
 Summary(pl):	Biblioteka Xxf86misc
 Name:		xorg-lib-libXxf86misc
-Version:	0.99.0
-Release:	0.02
+Version:	0.99.1
+Release:	0.1
 License:	MIT
 Group:		X11/Libraries
-Source0:	http://xorg.freedesktop.org/X11R7.0-RC0/lib/libXxf86misc-%{version}.tar.bz2
-# Source0-md5:	a8f6eec4acc821b022fdfed89af1deee
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/lib/libXxf86misc-%{version}.tar.bz2
+# Source0-md5:	c726a88012b1120244ada4864a55ef94
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 0.19
@@ -77,6 +77,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
+	libmandir=%{_mandir}/man3 \
 	pkgconfigdir=%{_pkgconfigdir}
 
 %clean
@@ -87,7 +88,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog
+%doc COPYING ChangeLog
 %attr(755,root,root) %{_libdir}/libXxf86misc.so.*.*.*
 
 %files devel
@@ -95,7 +96,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libXxf86misc.so
 %{_libdir}/libXxf86misc.la
 %{_pkgconfigdir}/xxf86misc.pc
-%{_mandir}/man3/*.3*
+%{_mandir}/man3/*.3x*
 
 %files static
 %defattr(644,root,root,755)
