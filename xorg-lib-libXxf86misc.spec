@@ -24,8 +24,8 @@ Xxf86misc library.
 Biblioteka Xxf86misc.
 
 %package devel
-Summary:	Header files for libXxf86misc development
-Summary(pl):	Pliki nag³ówkowe do biblioteki libXxf86misc
+Summary:	Header files for libXxf86misc library
+Summary(pl):	Pliki nag³ówkowe biblioteki libXxf86misc
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libXext-devel
@@ -35,7 +35,7 @@ Requires:	xorg-proto-xf86miscproto-devel
 Xxf86misc library.
 
 This package contains the header files needed to develop programs that
-use these libXxf86misc.
+use libXxf86misc.
 
 %description devel -l pl
 Biblioteka Xxf86misc.
