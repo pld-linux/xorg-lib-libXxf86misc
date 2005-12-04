@@ -1,12 +1,12 @@
 Summary:	Xxf86misc library
 Summary(pl):	Biblioteka Xxf86misc
 Name:		xorg-lib-libXxf86misc
-Version:	0.99.1
+Version:	0.99.2
 Release:	0.1
 License:	MIT
 Group:		X11/Libraries
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/lib/libXxf86misc-%{version}.tar.bz2
-# Source0-md5:	c726a88012b1120244ada4864a55ef94
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/lib/libXxf86misc-%{version}.tar.bz2
+# Source0-md5:	6f293994d1b478dfb322ec9c7e182bdb
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -14,7 +14,7 @@ BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-libXext-devel
 BuildRequires:	xorg-proto-xf86miscproto-devel
-BuildRequires:	xorg-util-util-macros >= 0.99.1
+BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -77,7 +77,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	libmandir=%{_mandir}/man3 \
 	pkgconfigdir=%{_pkgconfigdir}
 
 %clean
