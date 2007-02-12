@@ -1,5 +1,5 @@
 Summary:	Xxf86misc library
-Summary(pl.UTF-8):   Biblioteka Xxf86misc
+Summary(pl.UTF-8):	Biblioteka Xxf86misc
 Name:		xorg-lib-libXxf86misc
 Version:	1.0.1
 Release:	3
@@ -25,7 +25,7 @@ Biblioteka Xxf86misc.
 
 %package devel
 Summary:	Header files for libXxf86misc library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libXxf86misc
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libXxf86misc
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	xorg-lib-libXext-devel
@@ -45,7 +45,7 @@ używających biblioteki libXxf86misc.
 
 %package static
 Summary:	Static libXxf86misc library
-Summary(pl.UTF-8):   Biblioteka statyczna libXxf86misc
+Summary(pl.UTF-8):	Biblioteka statyczna libXxf86misc
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
