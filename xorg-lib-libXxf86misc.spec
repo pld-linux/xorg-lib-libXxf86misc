@@ -1,12 +1,12 @@
 Summary:	Xxf86misc library
 Summary(pl.UTF-8):	Biblioteka Xxf86misc
 Name:		xorg-lib-libXxf86misc
-Version:	1.0.1
-Release:	5
+Version:	1.0.2
+Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXxf86misc-%{version}.tar.bz2
-# Source0-md5:	7cee0df63903cef7f7a3fb68cdd99eef
+# Source0-md5:	51fed53e8de067d4b8666f75a0212400
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
