@@ -1,5 +1,5 @@
-Summary:	Xxf86misc library
-Summary(pl.UTF-8):	Biblioteka Xxf86misc
+Summary:	XFree86-Misc X extension library
+Summary(pl.UTF-8):	Biblioteka rozszerzenia X XFree86-Misc
 Name:		xorg-lib-libXxf86misc
 Version:	1.0.2
 Release:	1
@@ -14,14 +14,14 @@ BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-libXext-devel
 BuildRequires:	xorg-proto-xf86miscproto-devel
-BuildRequires:	xorg-util-util-macros >= 0.99.2
+BuildRequires:	xorg-util-util-macros >= 1.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Xxf86misc library.
+XFree86-Misc X extension library.
 
 %description -l pl.UTF-8
-Biblioteka Xxf86misc.
+Biblioteka rozszerzenia X XFree86-Misc.
 
 %package devel
 Summary:	Header files for libXxf86misc library
@@ -32,13 +32,13 @@ Requires:	xorg-lib-libXext-devel
 Requires:	xorg-proto-xf86miscproto-devel
 
 %description devel
-Xxf86misc library.
+XFree86-Misc X extension library.
 
 This package contains the header files needed to develop programs that
 use libXxf86misc.
 
 %description devel -l pl.UTF-8
-Biblioteka Xxf86misc.
+Biblioteka rozszerzenia X XFree86-Misc.
 
 Pakiet zawiera pliki nagłówkowe niezbędne do kompilowania programów
 używających biblioteki libXxf86misc.
@@ -50,12 +50,12 @@ Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
-Xxf86misc library.
+XFree86-Misc X extension library.
 
 This package contains the static libXxf86misc library.
 
 %description static -l pl.UTF-8
-Biblioteka Xxf86misc.
+Biblioteka rozszerzenia X XFree86-Misc.
 
 Pakiet zawiera statyczną bibliotekę libXxf86misc.
 
@@ -87,15 +87,16 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog
+%doc COPYING ChangeLog README
 %attr(755,root,root) %{_libdir}/libXxf86misc.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libXxf86misc.so.1
 
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libXxf86misc.so
 %{_libdir}/libXxf86misc.la
 %{_pkgconfigdir}/xxf86misc.pc
-%{_mandir}/man3/*.3x*
+%{_mandir}/man3/XF86Misc*.3x*
 
 %files static
 %defattr(644,root,root,755)
