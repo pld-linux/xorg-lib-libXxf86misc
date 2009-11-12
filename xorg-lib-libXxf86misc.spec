@@ -2,7 +2,7 @@ Summary:	XFree86-Misc X extension library
 Summary(pl.UTF-8):	Biblioteka rozszerzenia X XFree86-Misc
 Name:		xorg-lib-libXxf86misc
 Version:	1.0.2
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXxf86misc-%{version}.tar.bz2
