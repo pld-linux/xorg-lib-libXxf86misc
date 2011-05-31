@@ -2,7 +2,7 @@ Summary:	XFree86-Misc X extension library
 Summary(pl.UTF-8):	Biblioteka rozszerzenia X XFree86-Misc
 Name:		xorg-lib-libXxf86misc
 Version:	1.0.3
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXxf86misc-%{version}.tar.bz2
@@ -78,6 +78,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/libXxf86misc.la
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -93,7 +95,6 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libXxf86misc.so
-%{_libdir}/libXxf86misc.la
 %{_pkgconfigdir}/xxf86misc.pc
 %{_mandir}/man3/XF86Misc*.3x*
 
