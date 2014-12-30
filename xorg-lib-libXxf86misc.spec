@@ -96,7 +96,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libXxf86misc.so
 %{_pkgconfigdir}/xxf86misc.pc
-%{_mandir}/man3/XF86Misc*.3x*
+%{_mandir}/man3/XF86Misc*.3*
 
 %files static
 %defattr(644,root,root,755)
