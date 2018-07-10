@@ -1,19 +1,22 @@
 Summary:	XFree86-Misc X extension library
 Summary(pl.UTF-8):	Biblioteka rozszerzenia X XFree86-Misc
 Name:		xorg-lib-libXxf86misc
-Version:	1.0.3
-Release:	3
+Version:	1.0.4
+Release:	1
 License:	MIT
 Group:		X11/Libraries
-Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXxf86misc-%{version}.tar.bz2
-# Source0-md5:	6bc0bf78909fd71021c466c793d4385c
-URL:		http://xorg.freedesktop.org/
+Source0:	https://xorg.freedesktop.org/releases/individual/lib/libXxf86misc-%{version}.tar.bz2
+# Source0-md5:	37ad70f8b53b94b550f9290be97fbe2d
+URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
+BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-lib-libXext-devel
+BuildRequires:	xorg-proto-xextproto-devel
 BuildRequires:	xorg-proto-xf86miscproto-devel
+BuildRequires:	xorg-proto-xproto-devel
 BuildRequires:	xorg-util-util-macros >= 1.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,6 +31,7 @@ Summary:	Header files for libXxf86misc library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libXxf86misc
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	xorg-lib-libX11-devel
 Requires:	xorg-lib-libXext-devel
 Requires:	xorg-proto-xf86miscproto-devel
 
